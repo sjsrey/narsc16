@@ -72,18 +72,25 @@ If your screen looks like the previous image, you are good to go. If not, read t
 ## Installation Under Mac OS X
 
 
-### 1. Download the [Python 2.7 version of Anaconda Distribution Installer](https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe)
+### 1. Download the [Python 2.7 version of Anaconda Distribution Installer](https://www.continuum.io/downloads#osx)
 
-![Anaconda Windows](figs/readmefigs/acdwindows.PNG)
+![Anaconda mac](figs/readmefigs/acdmaco0.png)
 
 ### 2. Read the [Anaconda installation instructions](https://docs.continuum.io/anaconda/install)
 
-![Anaconda Windows](figs/readmefigs/acdwindows1.png)
+![Anaconda doc](figs/readmefigs/acdwindows1.png)
 
 ### 3. Download the [setup archive](  https://github.com/sjsrey/gds_env/archive/master.zip)
 
+We assume the download is extracted in `~/Downloads/gds_env-master`
 
-### 4. Move to the archive extraction directory
+
+### 4. Start a terminal and move to the archive extraction directory
+
+Note the prompt in this example is `gauss:gds_env-master teaching$`
+If we break this down we have first the machine name `gauss`, followed by the
+current directory tail `gds_env-master` as well as the user name `teaching`.
+These values will be different depending on how the user's prompt is set.
 
     gauss:gds_env-master teaching$ pwd
     /Users/teaching/Downloads/gds_env-master
