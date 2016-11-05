@@ -1,11 +1,9 @@
 # Install Instructions: PySAL @NARSC 2016
 
-I am looking forward to our workshop this coming Wednesday.
-
 
  Before you embark on your travels to NARSC, I would ask you to setup your own laptop with the required packages for the workshop. These are fairly large downloads so it would be more efficient for each participant to grab these packages before travel, rather than our workshop overtaxing the hotel network.
 
-The downloads are on the order of 400megs so the time required may be on the order of 10-15 minutes, depending on your connections.
+The downloads are on the order of 400megs so the time required for downloading and installation may be 10-15 minutes, depending on your connections.
 
 Below I give the instructions for different operating systems.
 
@@ -64,7 +62,8 @@ The command is:
 ![extract](figs/readmefigs/term5.PNG)
 
 
-If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email.
+If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email <sjsrey@gmail.com>
+.
 
 
 
@@ -128,7 +127,8 @@ gauss:gds_env-master teaching$ source activate gds_test
 (gds_test) gauss:gds_env-master teaching$
 ```
 
-If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email.
+If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email <sjsrey@gmail.com>
+.
 
 
 ## Installation Under Linux
