@@ -1,4 +1,4 @@
-# Spatial Data Analysis with PySAL: NARSC 2016
+# Install Instruction: PySAL @NARSC 2016
 
 I am looking forward to our workshop this coming Wednesday.
 
@@ -12,7 +12,6 @@ Should you have any questions please feel free to contact me at: sjsrey@gmail.co
 
 
 I will also bring installers on usb flash drives. And there is an option to use Virtualbox, if that is your thing. (See below)
-
 
 
 ## Installation Under Windows
