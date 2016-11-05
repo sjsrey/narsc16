@@ -4,5 +4,7 @@
 **Serge Rey** <sjsrey@gmail.com>
 
 
-* [Installation instructions](install.md)
+![journeys](figs/readmefigs/routes.png)
 
+
+* [Installation instructions](install.md)
