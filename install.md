@@ -72,17 +72,43 @@ If your screen looks like the previous image, you are good to go. If not, read t
 ## Installation Under Mac OS X
 
 
-``` 
-gauss:gds_env-master teaching$ pwd
-/Users/teaching/Downloads/gds_env-master
-gauss:gds_env-master teaching$ ls
-README.md			check_gds_stack.md		gds_requirements_linux-64.txt	gds_requirements_win-64.txt
-appveyor.yml			check_gds_stack_files		gds_requirements_osx-64.txt	install_gds_stack.yml
-check_gds_stack.ipynb		conda-forge::			gds_requirements_win-32.txt	us.tif
+### 1. Download the [Python 2.7 version of Anaconda Distribution Installer](https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe)
 
+![Anaconda Windows](figs/readmefigs/acdwindows.PNG)
+
+### 2. Read the [Anaconda installation instructions](https://docs.continuum.io/anaconda/install)
+
+![Anaconda Windows](figs/readmefigs/acdwindows1.png)
+
+### 3. Download the [setup archive](  https://github.com/sjsrey/gds_env/archive/master.zip)
+
+
+### 4. Move to the archive extraction directory
+
+    gauss:gds_env-master teaching$ pwd
+    /Users/teaching/Downloads/gds_env-master
+    gauss:gds_env-master teaching$ ls
+    README.md			check_gds_stack.md		gds_requirements_linux-64.txt	gds_requirements_win-64.txt
+    appveyor.yml			check_gds_stack_files		gds_requirements_osx-64.txt	install_gds_stack.yml
+    check_gds_stack.ipynb		conda-forge::			gds_requirements_win-32.txt	us.tif
+
+
+### 5. Create our workshop environment
+
+```
 gauss:gds_env-master teaching$ conda-env create -f install_gds_stack.yml
- gauss:gds_env-master teaching$ source activate gds_test
-(gds_test) gauss:gds_env-master teaching$ jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb 
+```
+
+### 6. Activate environment
+```
+gauss:gds_env-master teaching$ source activate gds_test
+```
+
+
+### 7. Test environment
+
+```
+(gds_test) gauss:gds_env-master teaching$ jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb
 [NbConvertApp] Converting notebook check_gds_stack.ipynb to markdown
 [NbConvertApp] Executing notebook with kernel: python2
 [NbConvertApp] Support files will be in check_gds_stack_files/
@@ -91,14 +117,19 @@ gauss:gds_env-master teaching$ conda-env create -f install_gds_stack.yml
 [NbConvertApp] Making directory check_gds_stack_files
 [NbConvertApp] Making directory check_gds_stack_files
 [NbConvertApp] Writing 6243 bytes to check_gds_stack.md
-(gds_test) gauss:gds_env-master teaching$ 
+(gds_test) gauss:gds_env-master teaching$
 ```
 
+If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email.
 
 
 ## Installation Under Linux
 
-If you are using Linux, I'm assuming you know how to do this :->
+If you are using Linux, two things:
+
+1.  Awesome
+2.  I'm assuming you know how to do this ;-> If that is a bad assumption, just email me.
+
 
 
 ## VirtualBox Option
