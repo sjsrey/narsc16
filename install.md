@@ -72,11 +72,22 @@ If your screen looks like the previous image, you are good to go. If not, read t
 ## Installation Under Mac OS X
 
 
+ ```
+gauss:gds_env-master teaching$ conda-env create -f install_gds_stack.yml
+ gauss:gds_env-master teaching$ source activate gds_test
+(gds_test) gauss:gds_env-master teaching$ jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb 
+[NbConvertApp] Converting notebook check_gds_stack.ipynb to markdown
+[NbConvertApp] Executing notebook with kernel: python2
+[NbConvertApp] Support files will be in check_gds_stack_files/
+[NbConvertApp] Making directory check_gds_stack_files
+[NbConvertApp] Making directory check_gds_stack_files
+[NbConvertApp] Making directory check_gds_stack_files
+[NbConvertApp] Making directory check_gds_stack_files
+[NbConvertApp] Writing 6243 bytes to check_gds_stack.md
+(gds_test) gauss:gds_env-master teaching$ 
+```
 
 
-`conda create --name gds-narsc16 python=3 pandas numpy scipy matplotlib bokeh seaborn scikit-learn jupyter`
-
-`conda install -c conda-forge --name gds-narsc16 geojson geopandas==0.2 mplleaflet==0.0.5 datashader==0.2.0 cartopy==0.14.2 folium==0.2.1 pyproj shapely`
 
 ## Installation Under Linux
 
