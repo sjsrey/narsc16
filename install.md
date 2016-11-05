@@ -1,14 +1,15 @@
-# Install Instruction: PySAL @NARSC 2016
+# Install Instructions: PySAL @NARSC 2016
 
 I am looking forward to our workshop this coming Wednesday.
 
 
  Before you embark on your travels to NARSC, I would ask you to setup your own laptop with the required packages for the workshop. These are fairly large downloads so it would be more efficient for each participant to grab these packages before travel, rather than our workshop overtaxing the hotel network.
 
+The downloads are on the order of 400megs so the time required may be on the order of 10-15 minutes, depending on your connections.
 
 Below I give the instructions for different operating systems.
 
-Should you have any questions please feel free to contact me at: sjsrey@gmail.com
+Should you have any questions please feel free to contact me at: <sjsrey@gmail.com>
 
 
 I will also bring installers on usb flash drives. And there is an option to use Virtualbox, if that is your thing. (See below)
