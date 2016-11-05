@@ -74,7 +74,8 @@ If your screen looks like the previous image, you are good to go. If not, read t
 
 ### 1. Download the [Python 2.7 version of Anaconda Distribution Installer](https://www.continuum.io/downloads#osx)
 
-![Anaconda mac](figs/readmefigs/acdmaco0.png)
+![Anacond mac](figs/readmefigs/acdmac0.png)
+
 
 ### 2. Read the [Anaconda installation instructions](https://docs.continuum.io/anaconda/install)
 
