@@ -72,7 +72,14 @@ If your screen looks like the previous image, you are good to go. If not, read t
 ## Installation Under Mac OS X
 
 
- ```
+``` 
+gauss:gds_env-master teaching$ pwd
+/Users/teaching/Downloads/gds_env-master
+gauss:gds_env-master teaching$ ls
+README.md			check_gds_stack.md		gds_requirements_linux-64.txt	gds_requirements_win-64.txt
+appveyor.yml			check_gds_stack_files		gds_requirements_osx-64.txt	install_gds_stack.yml
+check_gds_stack.ipynb		conda-forge::			gds_requirements_win-32.txt	us.tif
+
 gauss:gds_env-master teaching$ conda-env create -f install_gds_stack.yml
  gauss:gds_env-master teaching$ source activate gds_test
 (gds_test) gauss:gds_env-master teaching$ jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb 
