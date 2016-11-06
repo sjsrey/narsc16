@@ -23,7 +23,7 @@ I will also bring installers on usb flash drives. And there is an option to use 
 
 ![Anaconda Windows](figs/readmefigs/acdwindows1.png)
 
-### 3. Download the [setup archive](  https://github.com/sjsrey/gds_env/archive/master.zip)
+### 3. Download the [setup archive](  https://github.com/sjsrey/narsc16/archive/master.zip)
 
 
 ### 4. Extract the archive from step 3 to a working directory
@@ -47,14 +47,19 @@ The command is:
 
 
 ### 8. Activate your environment
-    activate gds_test
+    activate gds
 
 ![extract](figs/readmefigs/term4.PNG)
 
 
+### 9. Install Additional packages
+
+	pip install folium
+	pip install geojson
+	conda install -c bokeh datashader
 
 
-### 9. Test your environment
+### 10. Test your environment
 
     nbconvert --execute --ExecutePreprocessor.timeout=120 check_gds_stack.ipynb
 
@@ -64,8 +69,18 @@ The command is:
 
 If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email <sjsrey@gmail.com>
 .
+### Troubleshooting under Windows
 
+If you receive a message that the downloads have timed out, the fix is as
+follows:
 
+```
+(gds) deactivate
+$ conda remove -n gds --all
+``` 
+Respond `Y` when prompted.
+
+Then repeat steps 7-10 above and the download should pick up where it left off.
 
 
 ## Installation Under Mac OS X
@@ -80,55 +95,53 @@ If your screen looks like the previous image, you are good to go. If not, read t
 
 ![Anaconda doc](figs/readmefigs/acdwindows1.png)
 
-### 3. Download the [setup archive](  https://github.com/sjsrey/gds_env/archive/master.zip)
-
-We assume the download is extracted in `~/Downloads/gds_env-master`
+### 3. Download the [setup archive](  https://github.com/sjsrey/narsc16/archive/master.zip)
 
 
 ### 4. Start a terminal and move to the archive extraction directory
-
-Note the prompt in this example is `gauss:gds_env-master teaching$`
-If we break this down we have first the machine name `gauss`, followed by the
-current directory tail `gds_env-master` as well as the user name `teaching`.
-These values will be different depending on how the user's prompt is set.
-
-    gauss:gds_env-master teaching$ pwd
-    /Users/teaching/Downloads/gds_env-master
-    gauss:gds_env-master teaching$ ls
-    README.md			check_gds_stack.md		gds_requirements_linux-64.txt	gds_requirements_win-64.txt
-    appveyor.yml			check_gds_stack_files		gds_requirements_osx-64.txt	install_gds_stack.yml
-    check_gds_stack.ipynb		conda-forge::			gds_requirements_win-32.txt	us.tif
-
-
-### 5. Create our workshop environment
-
 ```
-gauss:gds_env-master teaching$ conda-env create -f install_gds_stack.yml
+$ conda-env create -f install_gds_stack.yml
 ```
 
-### 6. Activate environment
+### 5. Activate environment
 ```
-gauss:gds_env-master teaching$ source activate gds_test
+$ source activate gds
 ```
+
+### 6. Install additional packages
+
+	(gds) pip install folium
+	(gds) pip install geojson
+	(gds) conda install -c bokeh datashader
 
 
 ### 7. Test environment
 
 ```
-(gds_test) gauss:gds_env-master teaching$ jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb
-[NbConvertApp] Converting notebook check_gds_stack.ipynb to markdown
+(gds) jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=480 check_gds_stack.ipynb
+(gds) narsc16/git - [install●] » jupyter nbconvert --execute
+--ExecutePreprocessor.timeout=120 check_gds_stack.ipynb
+[NbConvertApp] Converting notebook check_gds_stack.ipynb to html
 [NbConvertApp] Executing notebook with kernel: python2
-[NbConvertApp] Support files will be in check_gds_stack_files/
-[NbConvertApp] Making directory check_gds_stack_files
-[NbConvertApp] Making directory check_gds_stack_files
-[NbConvertApp] Making directory check_gds_stack_files
-[NbConvertApp] Making directory check_gds_stack_files
-[NbConvertApp] Writing 6243 bytes to check_gds_stack.md
-(gds_test) gauss:gds_env-master teaching$
+[NbConvertApp] Writing 519599 bytes to check_gds_stack.html
+(gds) 
 ```
 
 If your screen looks like the previous image, you are good to go. If not, read through the directions again closely. If you still have issues please email <sjsrey@gmail.com>
 .
+
+### Troubleshooting Under Mac OS X
+
+If you receive a message that the downloads have timed out, the fix is as
+follows:
+
+```
+(gds) source deactivate
+$ conda remove -n gds --all
+``` 
+Respond `Y` when prompted.
+
+Then repeat steps 4-7 above and the download should pick up where it left off.
 
 
 ## Installation Under Linux
